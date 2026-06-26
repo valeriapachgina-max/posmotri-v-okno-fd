@@ -213,6 +213,7 @@ ol {
 }
 
 .content__details {
+  width: 399px;
   display: flex;
   flex-direction: column;
   gap: 26px;

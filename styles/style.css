@@ -57,7 +57,6 @@ ol {
   margin-right: 30px;
   margin-top: 133px;
   margin-bottom: 133px;
-  min-height: 534px;
   display: flex;
   gap: 30px;
   align-items: end;
@@ -117,19 +116,19 @@ ol {
   height: 27px;
 }
 
-input.search-form__textfield:focus-visible {
+.search-form__label:has(:focus-visible:not(:focus)) {
   outline: 1px solid #d9d9d9;
-  border-left: none;
+  border: none;
   border-right: none;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 }
 
-input.search-form__textfield:active {
+.search-form__textfield:active {
   outline: none;
 }
 
-input.search-form__textfield:focus {
+.search-form__textfield:focus {
   outline: none;
   border-left: none;
   border-right: none;
@@ -170,7 +169,7 @@ input.search-form__textfield:focus {
   cursor: pointer;
 }
 
-.search-form__label:focus-visible {
+.search-form__label:has(:focus-visible) {
   border: 1px solid #d9d9d9;
 }
 
@@ -269,7 +268,7 @@ input.search-form__textfield:focus {
   /*тут не смогла найти ошибку в размерах, согдасно макета размер 194*103*/
   height: 103px;
   width: 194px;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .button {
@@ -326,4 +325,8 @@ input.search-form__textfield:focus {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
+}
+
+div.error {
+  position: absolute;
 }

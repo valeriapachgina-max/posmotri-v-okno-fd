@@ -43,9 +43,8 @@ ol {
 .page {
   inline-size: 1200px;
   block-size: 100%;
-  margin-left: 30px;
-  margin-right: 30px;
   color: #fff;
+  margin: 0;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
@@ -55,6 +54,10 @@ ol {
 }
 
 .content {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 133px;
+  margin-bottom: 133px;
   min-height: 534px;
   display: flex;
   gap: 30px;

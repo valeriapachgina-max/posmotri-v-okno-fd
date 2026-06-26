@@ -41,16 +41,15 @@ ol {
 }
 
 .page {
-  inline-size: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   block-size: 100%;
   color: #fff;
   margin: 0;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .content {
